@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="main.js">
+    <title>Document</title>
+</head>
+<body>
+    $(document).ready(function() {
+        $('.js-menu-icon').click(function(event){
+            $('.js-menu-icon,.js-toogle-menu').toggleClass('is-active');
+            $('body').toggleClass('lock');
+        });
+    });
+    <header class="header">
+        <div class="container">
+            <div class="header__top-line">
+                <div class="main-menu-root">
+                    <a class="main-menu-icon js-menu-icon" href="#">
+                        <i class="fas fa-bars"></i>
+                        <span>Меню</span>
+                    </a>
+                    <nav class="main-menu js-toogle-menu" style="display: none;">
+                        <div class="uMenuV" id="uNMenuDiv1">
+                            <ul class="uMenuRoot">
+                                <li class="main-menu-item">
+                                    <a href="" class="uMenuItemA main-menu-item__link">
+                                        <span>ГЛАВНАЯ</span>
+                                    </a>
+                                </li>
+                                <li class="main-menu-item">
+                                    <a href="" class="uMenuItemA main-menu-item__link">
+                                        <span>КАТАЛОГ</span>
+                                    </a>
+                                </li>
+                                <li class="main-menu-item">
+                                    <a href="" class="uMenuItemA main-menu-item__link">
+                                        <span>ОТЗЫВЫ</span>
+                                    </a>
+                                </li>
+                                <li class="main-menu-item">
+                                    <a href="" class="uMenuItemA main-menu-item__link">
+                                        <span>КОНТАКТЫ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- <div class="header_body">
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li>
+                            <a href="" class="header_link">каталог</a>
+                        </li>
+                        <li>
+                            <a href="" class="header_link">топ игр</a>
+                        </li>
+                        <li>
+                            <a href="" class="header_link">отзывы</a>
+                        </li>
+                        <li>
+                            <a href="" class="header_link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> -->
+        </div>
+    </header>
+    <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+</body>
+</html>
